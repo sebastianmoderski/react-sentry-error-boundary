@@ -1,6 +1,6 @@
 {
   "name": "react-sentry-error-boundary",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A React error boundary component with integrated Sentry error reporting using Raven JS",
   "main": "dist/ReactSentryErrorBoundary.js",
   "scripts": {
@@ -33,9 +33,9 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^5.0.1",
+    "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-node": "^6.0.1",

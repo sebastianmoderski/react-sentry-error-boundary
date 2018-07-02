@@ -1,6 +1,4 @@
 .babelrc
 .eslintrc
 .gitignore
-node_modules/
-!node_modules/raven-js/*
 src/
