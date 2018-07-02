@@ -1,5 +1,5 @@
 # react-sentry-error-boundary
-A React error boundary component with integrated Sentry error reporting using Raven JS.
+A React error boundary component with integrated Sentry error reporting using Raven JS.  This wrapper component library uses a single instance of Raven to manually capture exceptions in the React lifecycle method componentDidCatch.
 
 ### Installation
 
@@ -10,7 +10,6 @@ npm install --save react-sentry-error-boundary
 ### Requirements
 
 ```
-raven-js >= 3.36.3
 react >= 16.0.0
 ```
 
