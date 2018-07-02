@@ -1,0 +1,50 @@
+{
+  "name": "react-sentry-error-boundary",
+  "version": "0.0.1",
+  "description": "A React error boundary component with integrated Sentry error reporting using Raven JS",
+  "main": "dist/ReactSentryErrorBoundary.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "lint": "eslint src --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianmoderski/react-sentry-error-boundary.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "raven",
+    "ravenjs",
+    "sentry",
+    "getsentry"
+  ],
+  "author": {
+    "name": "Sebastian Moderski",
+    "email": "s.moderski@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastianmoderski/react-sentry-error-boundary/issues"
+  },
+  "homepage": "https://github.com/sebastianmoderski/react-sentry-error-boundary#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "peerDependencies": {
+    "raven-js": ">=3.26.3",
+    "react": ">=16.0.0"
+  }
+}
