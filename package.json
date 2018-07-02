@@ -1,6 +1,6 @@
 {
   "name": "react-sentry-error-boundary",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A React error boundary component with integrated Sentry error reporting using Raven JS",
   "main": "dist/ReactSentryErrorBoundary.js",
   "scripts": {
