@@ -24,12 +24,7 @@ import SentryErrorBoundary from 'react-sentry-error-boundary'
 import React from 'react'
 
 const App = () => {
-  <SentryErrorBoundary
-    dsn="https://<key>@sentry.io/<project>"
-    errorNode={
-      <div>An error has occurred.</div>
-    }
-  >
+  <SentryErrorBoundary dsn="https://<key>@sentry.io/<project>">
     <MyWidget />
   </SentryErrorBoundary>
 }
@@ -58,7 +53,7 @@ A callback function to execute on error.
 
 #### errorNode
 ```
-Required. A node to render on error.
+A node to render on error.
 ```
 
 #### userContext
