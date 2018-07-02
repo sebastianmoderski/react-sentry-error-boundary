@@ -61,7 +61,7 @@ export default class ReactSentryErrorBoundary extends React.Component {
     this.ravenClient.config(
       dsn,
       config
-    )
+    ).install()
 
     if (userContext) this.ravenClient.setUserContext(userContext)
   }
