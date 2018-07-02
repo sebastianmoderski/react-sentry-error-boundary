@@ -10,6 +10,7 @@ npm install --save react-sentry-error-boundary
 ### Requirements
 
 ```
+prop-types >=15.5.0
 raven-js >=3.26.3
 react >=16.0.0
 ```

@@ -1,7 +1,6 @@
+import PropTypes from 'prop-types'
 import Raven from '../../raven-js/src/singleton'
-import React, {
-  PropTypes
-} from 'react'
+import React from 'react'
 
 export default class ReactSentryErrorBoundary extends React.Component {
   static propTypes = {
