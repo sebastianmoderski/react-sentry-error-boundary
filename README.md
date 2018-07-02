@@ -33,13 +33,15 @@ export default App
 ### Props
 
 #### config
+[Documentation](https://docs.sentry.io/clients/node/config/)
 ```
-Sentry configuration object ([info](https://docs.sentry.io/clients/node/config/))
+Sentry configuration object
 ```
 
 #### dsn
+[Documentation](https://docs.sentry.io/quickstart/#configure-the-dsn)
 ```
-Required. Sentry DSN URL ([info](https://docs.sentry.io/quickstart/#configure-the-dsn))
+Required. Sentry DSN URL
 ```
 
 #### errorNode
@@ -48,6 +50,7 @@ A node to render on error
 ```
 
 #### userContext
+[Documentation](https://docs.sentry.io/learn/context/)
 ```
-Sentry user context object ([info](https://docs.sentry.io/learn/context/))
+Sentry user context object
 ```
