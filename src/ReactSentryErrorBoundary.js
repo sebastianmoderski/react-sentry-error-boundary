@@ -41,7 +41,7 @@ export default class ReactSentryErrorBoundary extends React.Component {
     this.logError(error)
   }
 
-  componentWillRecieveProps (nextProps) {
+  componentWillReceiveProps (nextProps) {
     if (!this.ravenClient) return
 
     const isChangedConfig = JSON.stringify(this.nextProps.config) !== JSON.stringify(this.props.config)
