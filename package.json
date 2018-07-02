@@ -1,6 +1,6 @@
 {
   "name": "react-sentry-error-boundary",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A React error boundary component with integrated Sentry error reporting using Raven JS",
   "main": "dist/ReactSentryErrorBoundary.js",
   "scripts": {
@@ -44,9 +44,7 @@
     "eslint-plugin-standard": "^3.1.0"
   },
   "peerDependencies": {
+    "raven-js": ">=3.26.3",
     "react": ">=16.0.0"
-  },
-  "dependencies": {
-    "raven-js": "^3.26.3"
   }
 }
