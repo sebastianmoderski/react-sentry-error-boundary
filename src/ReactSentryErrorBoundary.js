@@ -1,4 +1,4 @@
-import Raven from '../node_modules/raven-js/src/singleton'
+import Raven from '../../raven-js/src/singleton'
 import React, {
   PropTypes
 } from 'react'
