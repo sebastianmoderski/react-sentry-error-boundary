@@ -4,11 +4,12 @@ A React error boundary component with integrated Sentry error reporting using Ra
 ### Installation
 
 ```
-npm install --save react-sentry-error-boundary
+npm install --save-dev react-sentry-error-boundary
 ```
 
 ### Requirements
 
+#### Peer Dependencies
 ```
 prop-types >=15.5.0
 raven-js >=3.26.3
@@ -23,7 +24,12 @@ import SentryErrorBoundary from 'react-sentry-error-boundary'
 import React from 'react'
 
 const App = () => {
-  <SentryErrorBoundary dsn="https://<key>@sentry.io/<project>">
+  <SentryErrorBoundary
+    dsn="https://<key>@sentry.io/<project>"
+    errorNode={
+      <div>An error has occurred.</div>
+    }
+  >
     <MyWidget />
   </SentryErrorBoundary>
 }
@@ -36,22 +42,27 @@ export default App
 #### config
 [Documentation](https://docs.sentry.io/clients/node/config/)
 ```
-Sentry configuration object
+A Sentry configuration object.
 ```
 
 #### dsn
 [Documentation](https://docs.sentry.io/quickstart/#configure-the-dsn)
 ```
-Required. Sentry DSN URL
+Required. A Sentry DSN URL.
+```
+
+#### errorCallback
+```
+A callback function to execute on error.
 ```
 
 #### errorNode
 ```
-A node to render on error
+Required. A node to render on error.
 ```
 
 #### userContext
 [Documentation](https://docs.sentry.io/learn/context/)
 ```
-Sentry user context object
+A Sentry user context object.
 ```

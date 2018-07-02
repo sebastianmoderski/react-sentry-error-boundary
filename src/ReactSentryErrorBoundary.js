@@ -4,10 +4,10 @@ import React from 'react'
 
 export default class ReactSentryErrorBoundary extends React.Component {
   static propTypes = {
-    callback: PropTypes.func,
     children: PropTypes.node.isRequired,
     config: PropTypes.object,
     dsn: PropTypes.string.isRequired,
+    errorCallback: PropTypes.func,
     errorNode: PropTypes.node.isRequired,
     userContext: PropTypes.object
   }
@@ -31,7 +31,7 @@ export default class ReactSentryErrorBoundary extends React.Component {
 
     this.logError(error)
 
-    if (this.props.callback) this.props.callback()
+    if (this.props.errorCallback) this.props.errorCallback()
   }
 
   logError (error) {
