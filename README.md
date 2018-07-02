@@ -10,11 +10,8 @@ npm install --save react-sentry-error-boundary
 ### Requirements
 
 ```
-raven-js >=3.26.3
 react >= 16.0.0
 ```
-
-This library is dependent on [babel-plugin-import-root](https://www.npmjs.com/package/babel-plugin-root-import) in order to properly resolve a root based import of Raven JS singleton script in peer dependency raven-js.  Please see documentation for babel-plugin-import-root for proper installation.
 
 ### Usage
 
