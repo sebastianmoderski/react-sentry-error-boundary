@@ -40,10 +40,9 @@ A Sentry configuration object.
 ```
 
 #### dsn
-**Required**
 [Documentation](https://docs.sentry.io/quickstart/#configure-the-dsn)
 ```
-A Sentry DSN URL.
+REQUIRED. A Sentry DSN URL.
 ```
 
 #### errorCallback
