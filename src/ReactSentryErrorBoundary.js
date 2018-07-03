@@ -9,11 +9,13 @@ export default class ReactSentryErrorBoundary extends React.Component {
     dsn: PropTypes.string.isRequired,
     errorCallback: PropTypes.func,
     errorNode: PropTypes.node,
+    logErrors: PropTypes.bool,
     userContext: PropTypes.object
   }
 
   static defaultProps = {
-    config: {}
+    config: {},
+    logErrors: true
   }
 
   constructor (props) {
@@ -28,8 +30,8 @@ export default class ReactSentryErrorBoundary extends React.Component {
     this.setState({
       hasError: true
     })
-
-    this.logError(error)
+    
+    if (this.props.logErrors) this.logError(error)
 
     if (this.props.errorCallback) this.props.errorCallback()
   }

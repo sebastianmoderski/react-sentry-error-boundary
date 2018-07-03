@@ -23,11 +23,10 @@ import MyWidget from './MyWidget'
 import SentryErrorBoundary from 'react-sentry-error-boundary'
 import React from 'react'
 
-const App = () => {
+const App = () =>
   <SentryErrorBoundary dsn="https://<key>@sentry.io/<project>">
     <MyWidget />
   </SentryErrorBoundary>
-}
 
 export default App
 ```
@@ -41,9 +40,10 @@ A Sentry configuration object.
 ```
 
 #### dsn
+**Required**
 [Documentation](https://docs.sentry.io/quickstart/#configure-the-dsn)
 ```
-Required. A Sentry DSN URL.
+A Sentry DSN URL.
 ```
 
 #### errorCallback
@@ -54,6 +54,11 @@ A callback function to execute on error.
 #### errorNode
 ```
 A node to render on error.
+```
+
+#### logErrors
+```
+A bool indicating whether errors are logged to Sentry. Defaults to true.
 ```
 
 #### userContext
