@@ -30,7 +30,7 @@ export default class ReactSentryErrorBoundary extends React.Component {
     this.setState({
       hasError: true
     })
-    
+
     if (this.props.logErrors) this.logError(error)
 
     if (this.props.errorCallback) this.props.errorCallback()
