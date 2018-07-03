@@ -8,7 +8,7 @@ export default class ReactSentryErrorBoundary extends React.Component {
     config: PropTypes.object,
     dsn: PropTypes.string.isRequired,
     errorCallback: PropTypes.func,
-    errorNode: PropTypes.node.isRequired,
+    errorNode: PropTypes.node,
     logErrors: PropTypes.bool,
     userContext: PropTypes.object
   }
@@ -30,7 +30,6 @@ export default class ReactSentryErrorBoundary extends React.Component {
     this.setState({
       hasError: true
     })
-
     
     if (this.props.logErrors) this.logError(error)
 
@@ -51,7 +50,7 @@ export default class ReactSentryErrorBoundary extends React.Component {
   }
 
   render () {
-    if (this.state.hasError) return this.props.errorNode
+    if (this.state.hasError && this.props.errorNode) return this.props.errorNode
 
     return this.props.children
   }
